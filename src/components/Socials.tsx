@@ -5,25 +5,70 @@ import {
   FaRedditAlien,
   FaMediumM,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Socials: React.FC = () => {
   return (
     <nav className="socials">
-      <a href="https://discord.gg/M5AbE6VX" target="_blank" rel="noreferrer">
+      <motion.a
+        initial={{ rotate: 0 }}
+        whileHover={{
+          rotate: [0, 10, -10, 0],
+        }}
+        href="https://discord.gg/wDxuxCaRaE"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaDiscord />
-      </a>
-      <a href="#social" target="_blank" rel="noreferrer">
+      </motion.a>
+
+      <motion.a
+        initial={{ rotate: 0 }}
+        whileHover={{
+          rotate: [0, 10, -10, 0],
+        }}
+        href="https://twitter.com/ascnecoverse"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaTwitter />
-      </a>
-      <a href="#social" target="_blank" rel="noreferrer">
+      </motion.a>
+
+      <motion.a
+        initial={{ rotate: 0 }}
+        whileHover={{
+          rotate: [0, 10, -10, 0],
+        }}
+        href="https://www.instagram.com/ascensionecoverse/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaInstagram />
-      </a>
-      <a href="#social" target="_blank" rel="noreferrer">
+      </motion.a>
+
+      <motion.a
+        initial={{ rotate: 0 }}
+        whileHover={{
+          rotate: [0, 10, -10, 0],
+        }}
+        href="https://www.reddit.com/user/AscensionEcoverse"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaRedditAlien />
-      </a>
-      <a href="#social" target="_blank" rel="noreferrer">
+      </motion.a>
+
+      <motion.a
+        initial={{ rotate: 0 }}
+        whileHover={{
+          rotate: [0, 10, -10, 0],
+        }}
+        href="https://medium.com/@ascensionecoverse"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaMediumM />
-      </a>
+      </motion.a>
     </nav>
   );
 };
