@@ -431,6 +431,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     h1 {
       text-transform: capitalize;
     }
@@ -458,6 +459,10 @@ img {
 .chartModal {
   padding: 2rem;
   padding-top: 8rem;
+  @media only screen and (max-width: 600px) {
+    // properties for smaller screens
+    padding-top: 2rem;
+  }
   &--container {
     padding: 1rem;
     background-color: rgba(36, 35, 35, 0.75);
@@ -470,6 +475,11 @@ img {
       position: absolute;
       top: 9rem;
       right: 4rem;
+      @media only screen and (max-width: 600px) {
+        // properties for smaller screens
+        top: 2rem;
+        right: 3rem;
+      }
     }
     p {
       max-width: calc(100vw - 6rem);
