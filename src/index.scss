@@ -431,7 +431,11 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    @media only screen and (max-width: 600px) {
+      // properties for smaller screens
+      flex-wrap: wrap;
+    }
     h1 {
       text-transform: capitalize;
     }
