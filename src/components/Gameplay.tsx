@@ -62,7 +62,7 @@ const Gameplay: React.FC = () => {
           profits! Each resource takes time to harvest, and every crafted item
           has an associated cost, so it's up to you to determine the strategy
           that makes you the most profit!{" "}
-          <a href="#whitepaper">Learn more about each function</a>.
+          <a href="#/ascensionx/whitepaper">Learn more about each function</a>.
         </p>
         <h2>Watch and Mitigate the World Pollution Bar!</h2>
         <p>
@@ -75,7 +75,7 @@ const Gameplay: React.FC = () => {
           levels, temperature changes, and other environmental disasters will
           make it harder and harder to harvest the resources you need to
           survive.{" "}
-          <a href="#whitepaper">
+          <a href="#/ascensionx/whitepaper">
             Learn more about the World Pollution Bar here
           </a>
           .
@@ -99,7 +99,7 @@ const Gameplay: React.FC = () => {
           unique Ascension trading mechanism to swap resources with other
           players, and combine trading and sales to create unique and profitable
           strategies!{" "}
-          <a href="whitepaper">
+          <a href="#/ascensionx/whitepaper">
             Learn more about external sales and trading here
           </a>
           .

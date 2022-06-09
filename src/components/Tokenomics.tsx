@@ -78,7 +78,7 @@ const Tokenomics: React.FC = () => {
         </p>
         <p>
           A more detailed tokenomics breakdown can be found in the{" "}
-          <a href="#whitepaper">whitepaper</a>.
+          <a href="#/ascensionx/whitepaper">whitepaper</a>.
         </p>
       </Leaf>
     </>
