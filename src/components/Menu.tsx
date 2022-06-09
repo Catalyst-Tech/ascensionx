@@ -5,7 +5,7 @@ const Menu: React.FC = () => {
     <nav className="menu">
       <Button href="/ascensionx">Home</Button>
       {/*<Button href="/ascensionx/buy">Buy $ASCN</Button>*/}
-      <Button href="/ascensionx/whitepaper">Whitepaper</Button>
+      <Button href="#/ascensionx/whitepaper">Whitepaper</Button>
       {/*<Button href="/ascensionx/gettingStarted">Getting Started</Button>*/}
     </nav>
   );

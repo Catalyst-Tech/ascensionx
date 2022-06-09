@@ -6,7 +6,7 @@ import Buy from "./components/Buy";
 import Whitepaper from "./components/Whitepaper";
 import GettingStarted from "./components/GettingStarted";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const root = ReactDOM.createRoot(
@@ -15,8 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ParallaxProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
+          <Route path="/" element={<App />} />
           <Route path="/ascensionx" element={<App />} />
           <Route path="/ascensionx/buy" element={<Buy />} />
           <Route path="/ascensionx/whitepaper" element={<Whitepaper />} />
@@ -25,7 +26,7 @@ root.render(
             element={<GettingStarted />}
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ParallaxProvider>
   </React.StrictMode>
 );
