@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ascensionx/static/css/main.c68d3657.css",
-    "main.js": "/ascensionx/static/js/main.c5e3eb85.js",
+    "main.js": "/ascensionx/static/js/main.a33b0370.js",
     "static/js/787.1e7f8c6f.chunk.js": "/ascensionx/static/js/787.1e7f8c6f.chunk.js",
     "static/media/EarthMarsLoop.mp4": "/ascensionx/static/media/EarthMarsLoop.3cc7c2a3d7545f3113aa.mp4",
     "static/media/MicrosoftTeams-image.png": "/ascensionx/static/media/MicrosoftTeams-image.307c47ae4179915d9990.png",
@@ -15,11 +15,11 @@
     "static/media/diagram.png": "/ascensionx/static/media/diagram.511b04621718a3f0447d.png",
     "index.html": "/ascensionx/index.html",
     "main.c68d3657.css.map": "/ascensionx/static/css/main.c68d3657.css.map",
-    "main.c5e3eb85.js.map": "/ascensionx/static/js/main.c5e3eb85.js.map",
+    "main.a33b0370.js.map": "/ascensionx/static/js/main.a33b0370.js.map",
     "787.1e7f8c6f.chunk.js.map": "/ascensionx/static/js/787.1e7f8c6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c68d3657.css",
-    "static/js/main.c5e3eb85.js"
+    "static/js/main.a33b0370.js"
   ]
 }
