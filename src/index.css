@@ -690,6 +690,12 @@ footer {
   padding-bottom: 2rem;
 }
 
+.whitepaper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 90vh;
+}
+
 .stepperButtons {
   padding-top: 1rem;
   display: -webkit-box;

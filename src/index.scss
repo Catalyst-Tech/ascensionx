@@ -567,6 +567,10 @@ footer {
   h1 {
     padding-bottom: 2rem;
   }
+  img {
+    object-fit: contain;
+    height: 90vh;
+  }
 }
 
 .stepperButtons {
