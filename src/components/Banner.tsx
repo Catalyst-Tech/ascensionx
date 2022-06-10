@@ -3,7 +3,7 @@ import MarsVideo from "../images/EarthMarsLoop.mp4";
 const Banner: React.FC = () => {
   return (
     <>
-      <video className="videoTag" autoPlay loop muted>
+      <video className="videoTag" autoPlay loop muted playsInline>
         <source src={MarsVideo} type="video/mp4" />
       </video>
       <div className="banner">
