@@ -22,7 +22,7 @@ const Roadmap: React.FC = () => {
               "Direct Fiat On-Ramp Integration",
               "Surprise Community NFT Pack Drops (New gear, pets, and more!)",
               "Initial Ascension Ecoverse Gameplay Mechanics Revealed",
-              "Ascension Ecoverse Game Demo Launched",
+              "Ascension Ecoverse Game Demo (Alpha) Launched",
             ],
           },
           {
@@ -44,7 +44,7 @@ const Roadmap: React.FC = () => {
             name: "Ascended Stage",
             key: 3,
             desc: [
-              "Ascension Ecoverse Alpha (Public) Game Launch",
+              "Ascension Ecoverse Full Game Launch",
               "Ascension Ecoverse Holiday Events, Contests, & Tournaments",
               "$ASCN Cross-Chain Integration",
               "Decentralized $ASCN Player DAO",
