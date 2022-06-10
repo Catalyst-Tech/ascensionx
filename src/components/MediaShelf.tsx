@@ -17,7 +17,7 @@ const MediaItem: React.FC<MediaItemProps> = ({ imageUrl, caption }) => {
       <li key={`${caption}-${imageUrl}`} className="media-shelf--item">
         <figure>
           <picture>
-            <img src={`/${imageUrl}`} alt={caption} loading="lazy" />
+            <img src={`${imageUrl}`} alt={caption} loading="lazy" />
           </picture>
           <figcaption>{caption}</figcaption>
           <Button
@@ -37,7 +37,7 @@ const MediaItem: React.FC<MediaItemProps> = ({ imageUrl, caption }) => {
               <GrClose />
             </Button>
 
-            <img src={`/${imageUrl}`} alt={caption} loading="lazy" />
+            <img src={`${imageUrl}`} alt={caption} loading="lazy" />
 
             <div className="media-modal--container--text">
               <h1>{caption}</h1>
