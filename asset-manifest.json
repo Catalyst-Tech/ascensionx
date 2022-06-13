@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.57906b28.css",
-    "main.js": "/static/js/main.1574467f.js",
+    "main.css": "/static/css/main.a6415ee8.css",
+    "main.js": "/static/js/main.9779d9c1.js",
     "static/js/787.1e7f8c6f.chunk.js": "/static/js/787.1e7f8c6f.chunk.js",
     "static/media/EarthMarsLoop.mp4": "/static/media/EarthMarsLoop.3cc7c2a3d7545f3113aa.mp4",
     "static/media/MicrosoftTeams-image.png": "/static/media/MicrosoftTeams-image.307c47ae4179915d9990.png",
@@ -14,12 +14,12 @@
     "static/media/PatrickAvatar.svg": "/static/media/PatrickAvatar.f1e7964799e8e19377093daa24b1e810.svg",
     "static/media/diagram.png": "/static/media/diagram.01ab870a54d41016e48b.png",
     "index.html": "/index.html",
-    "main.57906b28.css.map": "/static/css/main.57906b28.css.map",
-    "main.1574467f.js.map": "/static/js/main.1574467f.js.map",
+    "main.a6415ee8.css.map": "/static/css/main.a6415ee8.css.map",
+    "main.9779d9c1.js.map": "/static/js/main.9779d9c1.js.map",
     "787.1e7f8c6f.chunk.js.map": "/static/js/787.1e7f8c6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57906b28.css",
-    "static/js/main.1574467f.js"
+    "static/css/main.a6415ee8.css",
+    "static/js/main.9779d9c1.js"
   ]
 }
