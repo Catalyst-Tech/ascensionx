@@ -11,7 +11,7 @@ const Team: React.FC = () => {
       <TextShelf
         media={[
           {
-            name: "Dr. Muni Venkateswarlu Kumaramangalam, PhD",
+            name: "Dr. Muni V.K",
             key: 1,
             desc: "Muni has a PhD in Computer Science and has extensive experience in research and development, as well as a strong background in blockchain technologies and smart contract development. He has previously worked on multiple blockchain projects with the University of Calgary and the University of Quebec at Chicoutimi. Currently, Muni is working on passion projects that address the issue of making cryptocurrency environmentally friendly, such as working with carbon credits, and assisting in the development of the Ascension Ecoverse game.",
             headshot: `${Muni}`,

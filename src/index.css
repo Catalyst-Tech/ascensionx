@@ -19,8 +19,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h1,
@@ -100,12 +99,12 @@ table th {
 
 table tr {
   -webkit-box-shadow: 0 1px 0 0 #2e2e2e;
-  box-shadow: 0 1px 0 0 #2e2e2e;
+          box-shadow: 0 1px 0 0 #2e2e2e;
 }
 
 table tbody tr:last-child {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .button {
@@ -142,7 +141,7 @@ img {
   inline-size: 100%;
   block-size: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -153,8 +152,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__left {
@@ -171,7 +170,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -196,14 +195,14 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -245,14 +244,14 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -302,12 +301,12 @@ img {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-gap: 32px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: calc(100vw - 4rem);
 }
 
@@ -365,11 +364,11 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   border: 1px solid white;
   border-radius: 4px;
@@ -409,6 +408,7 @@ img {
   display: grid;
   position: relative;
   margin: 0 -32px 32px;
+  overflow-x: scroll;
 }
 
 .media-shelf-container:before {
@@ -453,7 +453,7 @@ img {
   scroll-padding-inline: var(--gap);
   padding-block: calc(var(--gap) / 2);
   -ms-scroll-snap-type: inline mandatory;
-  scroll-snap-type: inline mandatory;
+      scroll-snap-type: inline mandatory;
 }
 
 .media-shelf li {
@@ -476,7 +476,7 @@ img {
   padding-bottom: 32px;
   border-radius: 4px;
   -webkit-box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .media-shelf figcaption {
@@ -512,20 +512,20 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 @media only screen and (max-width: 600px) {
   .media-modal--container {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -542,7 +542,7 @@ img {
 
 .media-modal--container img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   max-height: calc(90vh - 6rem);
 }
 
@@ -575,8 +575,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .chartModal--container button {
@@ -641,8 +641,8 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style: none;
   overflow-x: scroll;
 }
@@ -674,8 +674,8 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .whitepaper-tabs--item--dropdown {
@@ -693,7 +693,7 @@ footer {
 
 .whitepaper img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   height: 90vh;
 }
 
@@ -704,11 +704,11 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .stepperContent {
@@ -717,11 +717,11 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stepperContent img {
@@ -735,8 +735,8 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .MuiStepLabel-label,
