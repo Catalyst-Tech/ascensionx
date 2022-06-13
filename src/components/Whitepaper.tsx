@@ -1,7 +1,18 @@
 import Header from "./Header";
 import diagram from "../images/diagram.png";
+import Button from "@mui/material/Button";
 
 const Whitepaper: React.FC = () => {
+
+  function handleClick(id: any) {
+    const elem = document.getElementById(id);
+    //console.log(elem);
+
+    if (elem) {
+      window.scrollTo(0, elem.offsetTop - 60)
+    }
+  }
+
   return (
     <div className="whitepaper">
       <div className="main--container">
@@ -10,93 +21,93 @@ const Whitepaper: React.FC = () => {
 
         <nav className="whitepaper-tabs">
           <li className="whitepaper-tabs--item">
-            <a href="#summary">Summary</a>
+            <Button onClick={() => handleClick('summary')}>Summary</Button>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#mission">Mission</a>
+            <Button onClick={() => handleClick('mission')}>Mission</Button>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#roadmap">Roadmap</a>
+            <Button onClick={() => handleClick('roadmap')}>Roadmap</Button>
             <div className="whitepaper-tabs--item--dropdown">
               <li>
-                <a href="#ancestral">Ancestral Stage</a>
+                <Button onClick={() => handleClick('ancestral')}>Ancestral Stage</Button>
               </li>
               <li>
-                <a href="#evolved">Evolved Stage</a>
+                <Button onClick={() => handleClick('evolved')}>Evolved Stage</Button>
               </li>
               <li>
-                <a href="#ascended">Ascended Stage</a>
+                <Button onClick={() => handleClick('ascended')}>Ascended Stage</Button>
               </li>
             </div>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#fundamentals">Game Fundamentals</a>
+            <Button onClick={() => handleClick('fundamentals')}>Game Fundamentals</Button>
             <div className="whitepaper-tabs--item--dropdown">
               <li>
-                <a href="#islands">Islands</a>
+                <Button onClick={() => handleClick('islands')}>Islands</Button>
               </li>
               <li>
-                <a href="#harvesting">Resource Harvesting</a>
+                <Button onClick={() => handleClick('harvesting')}>Resource Harvesting</Button>
               </li>
               <li>
-                <a href="#crafting">Crafting</a>
+                <Button onClick={() => handleClick('crafting')}>Crafting</Button>
               </li>
               <li>
-                <a href="#vendor">Vendor</a>
+                <Button onClick={() => handleClick('vendor')}>Vendor</Button>
               </li>
               <li>
-                <a href="#wpb">World Pollution Bar</a>
+                <Button onClick={() => handleClick('wpb')}>World Pollution Bar</Button>
               </li>
               <li>
-                <a href="#banking">Banking</a>
+                <Button onClick={() => handleClick('banking')}>Banking</Button>
               </li>
               <li>
-                <a href="#trading">External Sales/Trading</a>
+                <Button onClick={() => handleClick('trading')}>External Sales/Trading</Button>
               </li>
             </div>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#tokenomics">Tokenomics</a>
+            <Button onClick={() => handleClick('tokenomics')}>Tokenomics</Button>
             <div className="whitepaper-tabs--item--dropdown">
               <li>
-                <a href="#token">$ASCN Token</a>
+                <Button onClick={() => handleClick('token')}>$ASCN Token</Button>
               </li>
               <li>
-                <a href="#chains">Plasma Chains</a>
+                <Button onClick={() => handleClick('chains')}>Plasma Chains</Button>
               </li>
               <li>
-                <a href="#distribution">Token Distribution</a>
+                <Button onClick={() => handleClick('distribution')}>Token Distribution</Button>
               </li>
               <li>
-                <a href="#launch">Launch Tokenomics</a>
+                <Button onClick={() => handleClick('launch')}>Launch Tokenomics</Button>
               </li>
               <li>
-                <a href="#balancing">In-Game Balancing</a>
+                <Button onClick={() => handleClick('balancing')}>In-Game Balancing</Button>
               </li>
               <li>
-                <a href="#fees">Fees</a>
+                <Button onClick={() => handleClick('fees')}>Fees</Button>
               </li>
             </div>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#community">Community</a>
+            <Button onClick={() => handleClick('community')}>Community</Button>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#team">Teams</a>
+            <Button onClick={() => handleClick('team')}>Teams</Button>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#support">Support</a>
+            <Button onClick={() => handleClick('support')}>Support</Button>
           </li>
 
           <li className="whitepaper-tabs--item">
-            <a href="#links">Trusted Links</a>
+            <Button onClick={() => handleClick('links')}>Trusted Links</Button>
           </li>
         </nav>
 
