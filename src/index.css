@@ -408,7 +408,6 @@ img {
   display: grid;
   position: relative;
   margin: 0 -32px 32px;
-  overflow-x: scroll;
 }
 
 .media-shelf-container:before {
