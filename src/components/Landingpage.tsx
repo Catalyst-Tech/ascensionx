@@ -17,16 +17,6 @@ const Landingpage: React.FC = () => {
       <Banner />
       <div className="stack stack--jic">
         <Socials id="Social-Media-Menu-1" />
-        {/*<motion.a
-          initial={{ rotate: 0 }}
-          whileHover={{
-            rotate: [0, 10, -10, 0],
-          }}
-          href="/ascensionx/buy"
-          className="button button--2nd"
-        >
-          Buy $ASCN
-        </motion.a>*/}
       </div>
     </motion.div>
   );
