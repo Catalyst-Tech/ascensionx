@@ -44,6 +44,7 @@ const Tokenomics: React.FC = () => {
         }}
         data={data}
         className="pie-chart"
+        aria-label="Tokenomics Chart"
       />
 
       <Modal open={open} onClose={() => setOpen(false)}>

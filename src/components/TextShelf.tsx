@@ -10,10 +10,10 @@ type ListProps = {
 const List: React.FC<ListProps> = ({ desc }) => {
   return (
     <div>
-      {desc.map((item: any, index: any) => (
+      {desc.map((item: any) => (
         <div>
-          <input type="checkbox" id={index} disabled={true} checked={false} />
-          <label htmlFor={index}>{item}</label>
+          <input type="checkbox" id={item} disabled={true} checked={false} />
+          <label htmlFor={item}>{item}</label>
         </div>
       ))}
     </div>
@@ -61,8 +61,8 @@ const TextShelf: React.FC<TextShelfProps> = ({ media, id }) => {
       </ul>
       <div className="media-shelf--text-buttons">
         <IconContext.Provider value={{ color: "white", size: "3em"}}>
-          <Button onClick={()=>scroll(false)}><FaArrowCircleLeft /></Button>
-          <Button onClick={()=>scroll(true)}><FaArrowCircleRight /></Button>
+          <Button onClick={()=>scroll(false)} aria-label="Left"><FaArrowCircleLeft /></Button>
+          <Button onClick={()=>scroll(true)} aria-label="Right"><FaArrowCircleRight /></Button>
         </IconContext.Provider>
       </div>
     </div>

@@ -76,8 +76,8 @@ const MediaShelf: React.FC<MediaShelfProps> = ({ media, id }) => {
       </ul>
       <div className="media-shelf--land-buttons">
         <IconContext.Provider value={{ color: "white", size: "3em"}}>
-          <Button onClick={()=>scroll(false)}><FaArrowCircleLeft /></Button>
-          <Button onClick={()=>scroll(true)}><FaArrowCircleRight /></Button>
+          <Button onClick={()=>scroll(false)} aria-label="Left"><FaArrowCircleLeft /></Button>
+          <Button onClick={()=>scroll(true)} aria-label="Right"><FaArrowCircleRight /></Button>
         </IconContext.Provider>
       </div>
     </div>
