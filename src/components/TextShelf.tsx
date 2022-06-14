@@ -1,4 +1,7 @@
 import { BsLinkedin } from "react-icons/bs";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import Button from "@mui/material/Button";
 
 type ListProps = {
   desc: String[];
@@ -25,12 +28,22 @@ type TextShelfProps = {
     headshot?: string;
     linkedin?: string;
   }[];
+  id: string;
 };
 
-const TextShelf: React.FC<TextShelfProps> = ({ media }) => {
+const TextShelf: React.FC<TextShelfProps> = ({ media, id }) => {
+
+  function scroll(right: boolean) {
+    const elem = document.getElementById(id);
+    console.log("right: ", right, " elem: ", elem);
+    
+    if (right && elem) elem.scrollLeft += 256;
+    else if (elem) elem.scrollLeft -= 256;
+  }
+
   return (
     <div className="media-shelf-container">
-      <ul className="media-shelf">
+      <ul className="media-shelf" id={id}>
         {media.map(({ name, key, desc, headshot, linkedin }) => (
           <li key={key} className="media-shelf--item">
             <figure>
@@ -46,6 +59,12 @@ const TextShelf: React.FC<TextShelfProps> = ({ media }) => {
           </li>
         ))}
       </ul>
+      <div className="media-shelf--text-buttons">
+        <IconContext.Provider value={{ color: "white", size: "3em"}}>
+          <Button onClick={()=>scroll(false)}><FaArrowCircleLeft /></Button>
+          <Button onClick={()=>scroll(true)}><FaArrowCircleRight /></Button>
+        </IconContext.Provider>
+      </div>
     </div>
   );
 };

@@ -54,6 +54,7 @@ const Roadmap: React.FC = () => {
             ],
           },
         ]}
+        id="roadmap"
       />
       {/*<h2>Ancestral Stage</h2>
         <ul>

@@ -39,6 +39,7 @@ const Team: React.FC = () => {
             linkedin: "https://www.linkedin.com/in/nicolasmquintana/",
           },
         ]}
+        id="team"
       />
     </>
   );

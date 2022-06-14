@@ -26,6 +26,7 @@ const Gameplay: React.FC = () => {
         </p>
       </Leaf>
       <MediaShelf
+        id="lands"
         media={[
           {
             imageUrl: "/images/island-forest.png",

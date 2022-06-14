@@ -499,6 +499,57 @@ img {
   list-style-position: inside;
 }
 
+.media-shelf--text-buttons {
+  display: none;
+  position: relative;
+  top: -285px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .media-shelf--text-buttons {
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.media-shelf--text-buttons svg {
+  background-color: black;
+  border-radius: 5rem;
+}
+
+.media-shelf--land-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -300px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.media-shelf--land-buttons svg {
+  background-color: black;
+  border-radius: 5rem;
+}
+
 .media-modal {
   padding: 2rem;
 }

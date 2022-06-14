@@ -420,6 +420,39 @@ img {
     display: list-item !important;
     list-style-position: inside;
   }
+  &--text-buttons {
+    display: none;
+
+    position: relative;
+    top: -285px;
+    padding-left: 2em;
+    padding-right: 2em;
+    @media only screen and (max-width: 1200px) {
+      // properties for smaller screens
+      top: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    svg {
+      background-color: black;
+      border-radius: 5rem;
+    }
+  }
+  &--land-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: relative;
+    top: -300px;
+    padding-left: 2em;
+    padding-right: 2em;
+    svg {
+      background-color: black;
+      border-radius: 5rem;
+    }
+  }
 }
 
 .media-modal {

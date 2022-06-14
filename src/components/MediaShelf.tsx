@@ -3,6 +3,8 @@ import { useState } from "react";
 import { GrClose } from "react-icons/gr";
 import getText from "./IslandInfo";
 import Button from "@mui/material/Button";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 type MediaItemProps = {
   imageUrl: any;
@@ -52,16 +54,32 @@ const MediaItem: React.FC<MediaItemProps> = ({ imageUrl, caption }) => {
 
 type MediaShelfProps = {
   media: { imageUrl: string; caption: string }[];
+  id: string;
 };
 
-const MediaShelf: React.FC<MediaShelfProps> = ({ media }) => {
+const MediaShelf: React.FC<MediaShelfProps> = ({ media, id }) => {
+
+  function scroll(right: boolean) {
+    const elem = document.getElementById(id);
+    console.log("right: ", right, " elem: ", elem);
+    
+    if (right && elem) elem.scrollLeft += 256;
+    else if (elem) elem.scrollLeft -= 256;
+  }
+
   return (
     <div className="media-shelf-container">
-      <ul className="media-shelf">
+      <ul className="media-shelf" id={id}>
         {media.map(({ imageUrl, caption }) => (
           <MediaItem imageUrl={imageUrl} caption={caption} />
         ))}
       </ul>
+      <div className="media-shelf--land-buttons">
+        <IconContext.Provider value={{ color: "white", size: "3em"}}>
+          <Button onClick={()=>scroll(false)}><FaArrowCircleLeft /></Button>
+          <Button onClick={()=>scroll(true)}><FaArrowCircleRight /></Button>
+        </IconContext.Provider>
+      </div>
     </div>
   );
 };
