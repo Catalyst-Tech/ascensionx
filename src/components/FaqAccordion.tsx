@@ -22,8 +22,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ title, content }) => {
       >
         <AccordionSummary
           expandIcon={<ExpandMore />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          id={title}
         >
           <Typography>{title}</Typography>
         </AccordionSummary>

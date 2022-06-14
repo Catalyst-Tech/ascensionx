@@ -16,7 +16,7 @@ const Landingpage: React.FC = () => {
       <Header />
       <Banner />
       <div className="stack stack--jic">
-        <Socials />
+        <Socials id="Social-Media-Menu-1" />
         {/*<motion.a
           initial={{ rotate: 0 }}
           whileHover={{

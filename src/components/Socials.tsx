@@ -7,9 +7,13 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const Socials: React.FC = () => {
+type SocialProps = {
+  id: string;
+};
+
+const Socials: React.FC<SocialProps> = ({id}) => {
   return (
-    <nav className="socials">
+    <nav className="socials" id={id} aria-label={id}>
       <motion.a
         initial={{ rotate: 0 }}
         whileHover={{

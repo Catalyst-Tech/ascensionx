@@ -17,7 +17,7 @@ const Community: React.FC = () => {
           social platforms and join our Discord community!
         </p>
         <div className="community">
-          <Socials />
+          <Socials id="Social-Media-Menu-2"/>
         </div>
       </Leaf>
     </>
