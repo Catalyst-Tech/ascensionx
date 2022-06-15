@@ -399,6 +399,18 @@ img {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .stack {
+    padding-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .stack {
+    padding-left: 0;
+  }
+}
+
 .stack--jic {
   justify-items: center;
 }
@@ -489,6 +501,12 @@ img {
   width: 24rem;
 }
 
+@media only screen and (max-width: 426px) {
+  .media-shelf--item {
+    width: calc(100vw - 1rem);
+  }
+}
+
 .media-shelf button {
   background-color: #65cd3c;
   color: white;
@@ -558,6 +576,7 @@ img {
   max-height: 90vh;
   background-color: rgba(36, 35, 35, 0.75);
   padding: 1rem;
+  width: calc(100vw - 6rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +589,7 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  overflow-y: scroll;
 }
 
 @media only screen and (max-width: 600px) {
@@ -587,7 +607,7 @@ img {
   background-color: #65cd3c;
   position: absolute;
   top: 3rem;
-  right: 4rem;
+  right: 5rem;
 }
 
 .media-modal--container img {
@@ -618,6 +638,7 @@ img {
 }
 
 .chartModal--container {
+  width: calc(100vw - 6rem);
   padding: 1rem;
   background-color: rgba(36, 35, 35, 0.75);
   display: -webkit-box;
@@ -627,6 +648,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-y: scroll;
 }
 
 .chartModal--container button {
@@ -639,7 +661,7 @@ img {
 @media only screen and (max-width: 600px) {
   .chartModal--container button {
     top: 2rem;
-    right: 3rem;
+    right: 5rem;
   }
 }
 
@@ -806,7 +828,7 @@ footer {
 
 @media only screen and (max-width: 450px) {
   .community {
-    padding-left: 1rem;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

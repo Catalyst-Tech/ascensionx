@@ -331,6 +331,14 @@ img {
     // properties for smaller screens
     padding-top: 15vh;
   }
+  @media only screen and (max-width: 400px) {
+    // properties for smaller screens
+    padding-left: 1.5rem;
+  }
+  @media only screen and (max-width: 350px) {
+    // properties for smaller screens
+    padding-left: 0;
+  }
   //position: absolute;
   //top: calc(35vh + (100vw * (9 / 16)));
   display: grid;
@@ -411,6 +419,10 @@ img {
   }
   &--item {
     width: 24rem;
+    @media only screen and (max-width: 426px) {
+      // properties for smaller screens
+      width: calc(100vw - 1rem);
+    }
   }
   button {
     background-color: $color-primary;
@@ -461,10 +473,12 @@ img {
     max-height: 90vh;
     background-color: rgba(36, 35, 35, 0.75);
     padding: 1rem;
+    width: calc(100vw - 6rem);
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow-y: scroll;
     @media only screen and (max-width: 600px) {
       // properties for smaller screens
       flex-wrap: wrap;
@@ -476,7 +490,7 @@ img {
       background-color: $color-primary;
       position: absolute;
       top: 3rem;
-      right: 4rem;
+      right: 5rem;
     }
     img {
       object-fit: contain;
@@ -501,11 +515,13 @@ img {
     padding-top: 2rem;
   }
   &--container {
+    width: calc(100vw - 6rem);
     padding: 1rem;
     background-color: rgba(36, 35, 35, 0.75);
 
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 
     button {
       background-color: $color-primary;
@@ -515,7 +531,7 @@ img {
       @media only screen and (max-width: 600px) {
         // properties for smaller screens
         top: 2rem;
-        right: 3rem;
+        right: 5rem;
       }
     }
     p {
@@ -644,6 +660,6 @@ footer {
   padding-left: 3rem;
   @media only screen and (max-width: 450px) {
     // properties for smaller screens
-    padding-left: 1rem;
+    padding-left: 0;
   }
 }
